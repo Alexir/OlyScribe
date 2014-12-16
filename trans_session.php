@@ -181,7 +181,8 @@ hear the utterance.</p><br/>
    echo "</td>\n";
 
    // playback gadget (note, broken if file len is incorrect)
-   echo "<td class=\"play\"><embed autostart=false controls=smallconsole width=100 height=25 src=\"".$waf."\"</td>\n";
+//   echo "<td class=\"play\"><embed autostart=false controls=smallconsole width=100 height=25 src=\"".$waf."\"</td>\n";
+   echo "<td class=\"play\"><audio width=\"100\" controls=\"controls\" <source src=\"".$waf."\" />Browser does not support audio.</audio></td>\n";
 
    echo "<td class=\"transcr\"> \n";    // field for trans entry
    echo "<input class=\"vfield textinput\" type=\"text\" id=\"tra".$dum[4].
